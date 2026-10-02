@@ -9,22 +9,21 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet("/create-car")
 public class CreateCarServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 
-        String name = request.getParameter("name");
+        String carName = req.getParameter("car-name");
 
-        Car car = new Car();
-        car.setName(name);
+        Car car = new Car(carName);
 
-        CarDAO dao = new CarDAO();
-        dao.createCar(car);
+        new CarDAO().createCar(car);
 
-        request.getRequestDispatcher("success.html").forward(request, resp);
+        resp.sendRedirect("/find-all-cars");
 
     }
 
