@@ -16,6 +16,8 @@ Java • Servlets • JDBC • JSP/JSTL • H2 Database • Maven • Apache Tom
 - Armazenamento de dados no banco H2
 - Processamento de requisições GET e POST
 
+### Conceitos abordados
+
 - Desenvolvimento de aplicações web com Java
 - Servlets e mapeamento de URLs
 - Métodos HTTP e comunicação entre páginas e back-end
