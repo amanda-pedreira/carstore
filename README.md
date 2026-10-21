@@ -9,14 +9,12 @@ O projeto tem como foco o desenvolvimento back-end com Java, processamento de re
 
 Java • Servlets • JDBC • JSP/JSTL • H2 Database • Maven • Apache Tomcat • HTML
 
-### Funcionalidades
+### Funcionalidades e Conceitos abordados
 
 - Cadastro de veículos
 - Consulta e listagem de veículos cadastrados
 - Armazenamento de dados no banco H2
 - Processamento de requisições GET e POST
-
-### Conceitos abordados
 
 - Desenvolvimento de aplicações web com Java
 - Servlets e mapeamento de URLs
